@@ -6,7 +6,8 @@ from preprocessing import clean
 
 # Load the trained model
 with open("spam_email_model.pkl", "rb") as file:
-    model, vectorizer = pickle.load(file)
+    model = pickle.load(file)
+
 
 # App title
 st.title("📧 Spam Email Classifier")
