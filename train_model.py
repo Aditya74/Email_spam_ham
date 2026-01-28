@@ -31,7 +31,8 @@ model = MultinomialNB()
 model.fit(X_vec, y)
 
 # Save BOTH model and vectorizer
-with open("spam_email_model.pkl", "wb") as f:
-    pickle.dump((model, vectorizer), f)
+with open("spam_email_model.pkl", "wb") as file:
+    pickle.dump((model, vectorizer), file)
+
 
 print("✅ Model trained and saved as spam_email_model.pkl")
